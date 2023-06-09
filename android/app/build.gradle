@@ -98,18 +98,22 @@ def enableSeparateBuildPerCPUArchitecture = false
 def enableProguardInReleaseBuilds = false
 
 android {
-    compileSdkVersion rootProject.ext.compileSdkVersion
+     packagingOptions {
+         exclude 'META-INF/proguard/androidx-annotations.pro'
+     }
+    compileSdkVersion 31
     buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        applicationId "com.mindcast"
+        compileSdkVersion = 31
+        applicationId "com.rahasongs"
         minSdkVersion rootProject.ext.minSdkVersion
-        targetSdkVersion rootProject.ext.targetSdkVersion
+        targetSdkVersion = 31
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.1"
     }
     signingConfigs {
-       release {
+        release {
             storeFile file('my_release_key.keystore')
             storePassword 'qwpo10xl'
             keyAlias 'my-key-alias'

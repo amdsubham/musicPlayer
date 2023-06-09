@@ -1,4 +1,4 @@
-package com.mindcast;
+package com.rahasongs;
 
 import android.os.Bundle;
 import com.facebook.react.ReactActivity;
