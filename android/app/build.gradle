@@ -109,7 +109,7 @@ android {
         versionName "1.0"
     }
     signingConfigs {
-        release {
+       release {
             storeFile file('my_release_key.keystore')
             storePassword 'qwpo10xl'
             keyAlias 'my-key-alias'

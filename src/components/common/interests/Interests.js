@@ -177,12 +177,11 @@ class Interests extends Component<{}, State> {
     const { interests } = this.state;
 
     if (indexSelected === 0) {
-      this.setState({
-        interests: interests.map(interest => (interest.title === 'ALL'
-          ? { ...interest, isSelected: true }
-          : { ...interest, isSelected: false })),
-      });
+      const selectedIntrest = interests.map(interest => (interest.title === 'ALL'
+        ? { ...interest, isSelected: true }
+        : { ...interest, isSelected: false }));
 
+      this.setState({ interests: selectedIntrest });
       return;
     }
 

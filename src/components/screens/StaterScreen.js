@@ -7,7 +7,7 @@ import SplashScreen from 'react-native-splash-screen';
 import FastImage from 'react-native-fast-image';
 import ErrorMessage from '~/components/common/ErrorMessage';
 import _get from 'lodash/get';
-import _head from 'lodash/head';
+import _isEmpty from 'lodash/isEmpty';
 import axios from 'axios';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
@@ -63,33 +63,33 @@ class StaterScreen extends Component<Props, {}> {
     this.loadImages();
 
     SplashScreen.hide();
-    // this.fetchBlockerData();
-    navigation.navigate(CONSTANTS.ROUTES.INTERESTS);
+    navigation.navigate(CONSTANTS.ROUTES.MAIN_STACK);
   }
-  fetchBlockerData = async () => {
-    const { navigation } = this.props;
-    const { isFirstLaunch } = useGetOnboardingStatus();
-    axios
-      .get('http://31.220.21.195:3002/mind-cast/api/v1/blocker')
-      .then((response) => {
-        const { data } = response;
-        if (_get(_head(data), 'should_block_app', false) === true) {
-          this.setState({ screenBlockerStatus: _head(data) });
-        } else {
-          // if intrest is there then route it to main stack else route it to intrest stack
+  // fetchBlockerData = async () => {
+  //   const { navigation } = this.props;
+  //   navigation.navigate(CONSTANTS.ROUTES.MAIN_STACK);
+  //   // const { isFirstLaunch } = useGetOnboardingStatus();
+  //   // axios
+  //   //   .get('http://31.220.21.195:3002/mind-cast/api/v1/blocker')
+  //   //   .then((response) => {
+  //   //     const { data } = response;
+  //   //     if (_get(_head(data), 'should_block_app', false) === true) {
+  //   //       this.setState({ screenBlockerStatus: _head(data) });
+  //   //     } else {
+  //   //       // if intrest is there then route it to main stack else route it to intrest stack
 
-          if (isFirstLaunch) {
-            navigation.navigate(CONSTANTS.ROUTES.INTERESTS);
-          } else {
-            navigation.navigate(CONSTANTS.ROUTES.MAIN_STACK);
-          }
-          // navigation.navigate(CONSTANTS.ROUTES.INTERESTS);
-        }
-      })
-      .catch(() => {
-        this.setState({ screenBlockerStatus: BLOCKER_RESPONSE });
-      });
-  };
+  //   //       if (isFirstLaunch) {
+  //   //         navigation.navigate(CONSTANTS.ROUTES.INTERESTS);
+  //   //       } else {
+  //   //         navigation.navigate(CONSTANTS.ROUTES.MAIN_STACK);
+  //   //       }
+  //   //       // navigation.navigate(CONSTANTS.ROUTES.INTERESTS);
+  //   //     }
+  //   //   })
+  //   //   .catch(() => {
+  //   //     this.setState({ screenBlockerStatus: BLOCKER_RESPONSE });
+  //   //   });
+  // };
   loadImages = (): void => {
     FastImage.preload([
       {
