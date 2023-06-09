@@ -1,5 +1,6 @@
 import axios from 'axios';
-import { SERVER_URL } from 'react-native-dotenv';
+import { SERVER_URL } from '~/utils/CONSTANTS';
+// import { SERVER_URL } from 'react-native-dotenv';
 
 const api = axios.create({
   baseURL: SERVER_URL,

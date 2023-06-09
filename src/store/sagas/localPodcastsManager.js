@@ -2,14 +2,14 @@ import RNFS from 'react-native-fs';
 import {
   select, call, all, put,
 } from 'redux-saga/effects';
-import { SERVER_URL } from 'react-native-dotenv';
+// import { SERVER_URL } from 'react-native-dotenv';
 
 import {
   removeItemFromStorage,
   persistItemInStorage,
   getItemFromStorage,
 } from '~/utils/AsyncStorageManager';
-import CONSTANTS from '~/utils/CONSTANTS';
+import CONSTANTS, { SERVER_URL } from '~/utils/CONSTANTS';
 
 import { Creators as LocalPodcastsManagerCreators } from '../ducks/localPodcastsManager';
 import { Creators as PlayerCreators } from '../ducks/player';
@@ -195,7 +195,7 @@ function* _handleDownloadPodcastResult(statusCode, path, podcast) {
     return podcastWithLocalURI;
   }
 
-  throw new Error('Something goes wrong when trying to Download the Podcast');
+  throw new Error('Something goes wrong when trying to Download the Song');
 }
 
 export function* downloadPodcast(podcast) {

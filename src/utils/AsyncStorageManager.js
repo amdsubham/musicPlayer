@@ -11,7 +11,6 @@ export const getItemFromStorage = async (
     const valueFromStorage = await AsyncStorage.getItem(
       `${CONSTANTS.KEYS.APP_STORAGE_KEY}:${key}`,
     );
-
     return valueFromStorage || defaultValue;
   } catch (error) {
     console.log(error);

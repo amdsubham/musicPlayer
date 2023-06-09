@@ -4,11 +4,10 @@ import React, { Fragment } from 'react';
 import { TouchableOpacity, View, Text } from 'react-native';
 import FastImage from 'react-native-fast-image';
 import styled from 'styled-components';
-
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Creators as PlayerCreators } from '~/store/ducks/player';
-
+import _startCase from 'lodash/startCase';
 import ProgressTimeLine from './ProgressTimeLine';
 import Icon from '~/components/common/Icon';
 import CONSTANTS from '~/utils/CONSTANTS';
@@ -119,7 +118,7 @@ const PlayerTracker = ({
           />
           <TextContentWrapper>
             <PodcastTitle>{currentPodcast.title}</PodcastTitle>
-            <AuthorName>{currentPodcast.author.name}</AuthorName>
+            <AuthorName>{_startCase(currentPodcast.author.name)}</AuthorName>
           </TextContentWrapper>
         </ContentWrapper>
         <PlayerButtonsWrapper>

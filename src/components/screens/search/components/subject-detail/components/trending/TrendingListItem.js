@@ -6,7 +6,7 @@ import {
 } from 'react-native';
 import FastImage from 'react-native-fast-image';
 import styled from 'styled-components';
-
+import _startCase from 'lodash/startCase';
 import AuthorInfo from '~/components/common/AuthorInfo';
 
 const ButtonWrapper = styled(View)`
@@ -103,7 +103,7 @@ const TrendingListItem = ({
           <AuthorInfo
             imageURL={author.thumbnailProfileImageURL}
             numberOfLines={2}
-            name={author.name}
+            name={_startCase(author.name)}
             textColor="dark"
           />
         </AuthorInfoWrapper>

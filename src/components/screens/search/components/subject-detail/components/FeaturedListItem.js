@@ -4,7 +4,7 @@ import React from 'react';
 import { TouchableOpacity, View, Text } from 'react-native';
 import styled from 'styled-components';
 import FastImage from 'react-native-fast-image';
-
+import _startCase from 'lodash/startCase';
 import DefaultButton from '~/components/common/DefaultButton';
 import ReviewStars from '~/components/common/ReviewStars';
 import AuthorInfo from '~/components/common/AuthorInfo';
@@ -79,7 +79,7 @@ const FeaturedListitem = ({ onPress, podcast }: Props): Object => (
         uri={podcast.imageURL}
       />
       <TextContent>
-        <PodcastTitle>{podcast.title}</PodcastTitle>
+        <PodcastTitle>{_startCase(podcast.title)}</PodcastTitle>
         <ReviewStars
           shouldShowReviewsText={false}
           stars={podcast.stars}
@@ -91,7 +91,7 @@ const FeaturedListitem = ({ onPress, podcast }: Props): Object => (
       <TextWrapper>
         <AuthorInfo
           imageURL={podcast.author.thumbnailProfileImageURL}
-          name={podcast.author.name}
+          name={_startCase(podcast.author.name)}
           numberOfLines={1}
           textColor="dark"
         />

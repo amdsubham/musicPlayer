@@ -66,7 +66,7 @@ const BeautifulRole = styled(Text)`
 const BeautifulImage = styled(FastImage).attrs(() => ({
   source: {
     uri:
-      'https://s3-sa-east-1.amazonaws.com/bon-appetit-resources/user-profile/user-profile.jpg',
+      'https://firebasestorage.googleapis.com/v0/b/musicplayer-4e559.appspot.com/o/raha%2F11.png?alt=media&token=5449d3be-6937-4bf9-a19e-d3b88a38db2a',
   },
 }))`
   width: ${({ theme }) => theme.metrics.getWidthFromDP('32%')}px;
@@ -144,9 +144,9 @@ const About = (): Object => (
     >
       <BeautifulImage />
       <ContentWrapper>
-        <BeautifulName>Stenio Wagner</BeautifulName>
+        <BeautifulName>Raha Music</BeautifulName>
         <BeautifulRoleWrapper>
-          <BeautifulRole>Full-Stack Engineer</BeautifulRole>
+          <BeautifulRole>Made in Odisha</BeautifulRole>
           <HeartBeating />
         </BeautifulRoleWrapper>
         <SocialButtonsWrapper>
@@ -167,8 +167,10 @@ const About = (): Object => (
         </SocialButtonsWrapper>
         <RedLine />
         <AboutText>
-          Hey! I'm Full-Stack JavaScript Engineer that loves apply his knowledge
-          to solve problems, create amazing products and impact lives!
+          Raha Music Player is having a varieties of santali music collections
+          of dong, lagne, baha, sorai, dasi, nehor, old and modern santali songs
+          The App is free with all features readily available. No Interruption
+          while streaming music!
         </AboutText>
       </ContentWrapper>
     </CardWrapper>

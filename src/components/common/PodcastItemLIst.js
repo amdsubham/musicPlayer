@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 import FastImage from 'react-native-fast-image';
 import styled, { withTheme } from 'styled-components';
-
+import _startCase from 'lodash/startCase';
 import Icon from '~/components/common/Icon';
 
 const Wrapper = styled(TouchableOpacity)`
@@ -159,7 +159,7 @@ const RecentlyPlayedListItem = ({
         <AuthorName
           shouldShowDownloadStatus={shouldShowDownloadStatus}
         >
-          {podcast.author.name}
+          {_startCase(podcast.author.name)}
         </AuthorName>
       </BottomContent>
     </ContentContainer>

@@ -4,7 +4,7 @@ import React from 'react';
 import { TouchableOpacity, View, Text } from 'react-native';
 import FastImage from 'react-native-fast-image';
 import styled from 'styled-components';
-
+import _startCase from 'lodash/startCase';
 import Icon from '~/components/common/Icon';
 import appStyles from '~/styles';
 
@@ -88,8 +88,8 @@ const NextPodcastListItem = ({
     />
     <TextContentWrapper>
       <TextWrapper>
-        <Title>{podcast.title}</Title>
-        <AuthorName>{podcast.author.name}</AuthorName>
+        <Title>{_startCase(podcast.title)}</Title>
+        <AuthorName>{_startCase(podcast.author.name)}</AuthorName>
       </TextWrapper>
       <TouchableOpacity
         onPress={() => removeFromPlaylist(podcast.id)}

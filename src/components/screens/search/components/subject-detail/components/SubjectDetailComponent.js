@@ -16,7 +16,7 @@ import appStyles from '~/styles';
 const TAB_ITEMS = [
   { id: 'featured', title: 'Featured' },
   { id: 'trending', title: 'Trending' },
-  { id: 'authors', title: 'Authors' },
+  { id: 'authors', title: 'Singers' },
 ];
 
 const HEADER_HEIGHT = appStyles.metrics.getHeightFromDP('25%');

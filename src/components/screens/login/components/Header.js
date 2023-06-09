@@ -37,15 +37,15 @@ const SloganText = styled(Text)`
 
 const Header = (): Object => (
   <Wrapper>
-    <AppTitle>MINDCAST</AppTitle>
+    <AppTitle>RAHA</AppTitle>
     <SloganWrapper>
       <DefaultText
         color={appStyles.colors.white}
-        text="A new way to boost your"
+        text="A new way to tune"
       />
       <DefaultText
         color={appStyles.colors.primaryColor}
-        text=" knowledge."
+        text=" music."
       />
     </SloganWrapper>
   </Wrapper>

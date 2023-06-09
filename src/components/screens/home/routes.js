@@ -43,12 +43,12 @@ const RootStack = createStackNavigator(
 
     [CONSTANTS.ROUTES.PODCAST_DETAIL]: {
       screen: PodcastDetailContainer,
-      navigationOptions: ({ navigation, screenProps }) => getDefaultHeaderWithTitle('Podcast Detail', navigation, screenProps),
+      navigationOptions: ({ navigation, screenProps }) => getDefaultHeaderWithTitle('Song Detail', navigation, screenProps),
     },
 
     [LOCAL_STACK_ROUTES.TRENDING_AUTHORS_SEE_ALL]: {
       screen: TrendingAuthorsSeeAll,
-      navigationOptions: ({ navigation, screenProps }) => getDefaultHeaderWithTitle('Trending Authors', navigation, screenProps),
+      navigationOptions: ({ navigation, screenProps }) => getDefaultHeaderWithTitle('Trending Singers', navigation, screenProps),
     },
 
     [LOCAL_STACK_ROUTES.HOTTEST_PODCASTS_SEE_ALL]: {
@@ -56,7 +56,7 @@ const RootStack = createStackNavigator(
       navigationOptions: ({ navigation, screenProps }) => getDefaultHeaderWithButton(
         navigation,
         screenProps,
-        'Hottest Podcasts',
+        'Hottest Songs',
         'play-circle-outline',
       ),
     },

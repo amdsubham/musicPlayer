@@ -73,7 +73,7 @@ const RootStack = createStackNavigator(
 
     [CONSTANTS.ROUTES.PODCAST_DETAIL]: {
       screen: PodcastDetailContainer,
-      navigationOptions: ({ navigation, screenProps }) => getDefaultHeaderWithTitle('Podcast Detail', navigation, screenProps),
+      navigationOptions: ({ navigation, screenProps }) => getDefaultHeaderWithTitle('Song Detail', navigation, screenProps),
     },
 
     [CONSTANTS.ROUTES.AUTHOR_DETAIL]: {
@@ -86,7 +86,7 @@ const RootStack = createStackNavigator(
       navigationOptions: ({ navigation, screenProps }) => getDefaultHeaderWithButton(
         navigation,
         screenProps,
-        'Your Podcasts',
+        'Your Songs',
         'play-circle-outline',
       ),
     },

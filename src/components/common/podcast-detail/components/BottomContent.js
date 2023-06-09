@@ -62,7 +62,7 @@ const BottomContent = ({
     {shouldShowAuthorSection && (
       <Section>
         <SectionTitle
-          title="Author"
+          title="Singer"
         />
         <AuthorDetailWrapper>
           <AuthorsListItem

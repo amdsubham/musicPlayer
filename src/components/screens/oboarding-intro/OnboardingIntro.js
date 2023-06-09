@@ -65,10 +65,10 @@ class OnboardingIntro extends Component<Props, State> {
     );
   };
 
-  onNavigateLogin = (): void => {
+  onNavigateIntrest = (): void => {
     const { navigation } = this.props;
 
-    navigation.navigate(CONSTANTS.ROUTES.LOGIN);
+    navigation.navigate(CONSTANTS.ROUTES.INTERESTS);
   };
 
   onFlatlistMomentumScrollEnd = (event: Object): void => {
@@ -118,7 +118,7 @@ class OnboardingIntro extends Component<Props, State> {
         <BottomContent
           onPressPrevious={this.onPressPreviousButton}
           onPressNext={this.onPressNextButton}
-          onPressSkip={this.onNavigateLogin}
+          onPressSkip={this.onNavigateIntrest}
           currentIndex={currentPageIndex}
           pagesLength={PAGES.length}
         />

@@ -65,6 +65,7 @@ const SearchComponent = ({
       <SubjectsList
         isTextInputFocused={isTextInputFocused}
         navigation={navigation}
+        shouldUseThumbnailImage
       />
     </SubjectsListWrapper>
   </Container>

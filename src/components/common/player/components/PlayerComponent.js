@@ -3,7 +3,7 @@
 import React from 'react';
 import { StatusBar, View } from 'react-native';
 import styled from 'styled-components';
-
+import _startCase from 'lodash/startCase';
 import BottomPlayerOptions from './bottom-player-options/BottomPlayerOptions';
 import PodcastTextContent from './PodcastTextContent';
 import BackgroundImage from './BackgroundImage';
@@ -85,8 +85,8 @@ const PlayerComponent = ({
         imageURL={currentPodcast.imageURL}
       />
       <PodcastTextContent
-        author={currentPodcast.author.name}
-        title={currentPodcast.title}
+        author={_startCase(currentPodcast.author.name)}
+        title={_startCase(currentPodcast.title)}
       />
       <ProgressSlider
         seekProgressTimer={seekProgressTimer}

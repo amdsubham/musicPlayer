@@ -114,7 +114,7 @@ const SearchAuthorListItem = ({
     >
       <AuthorName>{name}</AuthorName>
       <NumberPodcasts>
-        {`${numberPodcasts} ${numberPodcasts === 1 ? 'Podcast' : 'Podcasts'}`}
+        {`${numberPodcasts} ${numberPodcasts === 1 ? 'Song' : 'Songs'}`}
       </NumberPodcasts>
       <SubjectsWrapper>
         {subjects.map(subject => (

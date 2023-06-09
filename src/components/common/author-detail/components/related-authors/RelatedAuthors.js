@@ -48,7 +48,7 @@ const RelatedAuthors = ({ relatedAuthors }: Props): Object => (
   <Wrapper>
     <TitleWrapper>
       <SectionTitle
-        title="Related Authors"
+        title="Related Singers"
       />
     </TitleWrapper>
     <RelatedAuthorsList

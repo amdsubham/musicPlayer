@@ -3,7 +3,7 @@
 import React from 'react';
 import { FlatList, View } from 'react-native';
 import styled from 'styled-components';
-
+import _startCase from 'lodash/startCase';
 import NewReleasesDiscoverListItem from './NewReleasesDiscoverListItem';
 import SectionWithButton from '~/components/common/SectionWithButton';
 import CONSTANTS from '~/utils/CONSTANTS';
@@ -52,12 +52,12 @@ const NewReleasesDiscover = ({ navigation, data }: Props): Object => (
           })
           }
           authorImage={item.author.thumbnailProfileImageURL}
-          authorName={item.author.name}
+          authorName={_startCase(item.author.name)}
           podcastImage={item.imageURL}
           isLastIndex={index === data.length - 1}
           navigation={navigation}
           subject={item.category}
-          title={item.title}
+          title={_startCase(item.title)}
         />
       )}
     />

@@ -34,7 +34,7 @@ const getSectionsConfig = (
         ) => setHeaderPlayButtonPress(playlist, navigation),
       }),
       iconName: 'podcast',
-      title: 'Your Podcasts',
+      title: 'Your Songs',
     },
     {
       onPress: () => navigation.navigate(LOCAL_STACK_ROUTES.PODCASTS_DOWNLOADED, {

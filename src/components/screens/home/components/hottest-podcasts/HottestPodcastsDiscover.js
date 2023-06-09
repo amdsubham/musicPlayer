@@ -38,7 +38,7 @@ const HottestPodcastsDiscover = ({ navigation, data }: Props): Object => (
           },
         );
       }}
-      sectionTitle="Hottest Podcasts"
+      sectionTitle="Hottest Songs"
       buttonText="SEE ALL"
       buttonSize="small"
     />

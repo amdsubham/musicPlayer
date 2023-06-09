@@ -1,19 +1,19 @@
 export default (SOCIAL_BUTTONS = [
   {
-    color: '#0077B5',
-    url: 'https://www.linkedin.com/in/steniowagner',
-    iconName: 'linkedin',
+    color: '#3b5998',
+    url: 'https://www.facebook.com/rahamusicofficial',
+    iconName: 'facebook',
     withPadingTop: false,
   },
   {
-    color: '#333333',
-    url: 'https://github.com/steniowagner',
-    iconName: 'github-circle',
+    color: '#8a3ab9',
+    url: 'https://www.instagram.com/raha_music_official',
+    iconName: 'instagram',
     withPadingTop: true,
   },
   {
     color: '#EA4C89',
-    url: 'https://dribbble.com/steniowagner',
+    url: 'https://www.instagram.com/raha_music_official/',
     iconName: 'dribbble',
     withPadingTop: true,
   },

@@ -78,9 +78,7 @@ const PlaylistListItem = ({
         <PlaylistTitle>{title}</PlaylistTitle>
         <BottomContentWrapper>
           <NumberPodcasts>
-            {`${numberOfPodcasts} ${
-              numberOfPodcasts === 1 ? 'Podcast' : 'Podcasts'
-            }`}
+            {`${numberOfPodcasts} ${numberOfPodcasts === 1 ? 'Song' : 'Songs'}`}
           </NumberPodcasts>
           <Icon
             color={

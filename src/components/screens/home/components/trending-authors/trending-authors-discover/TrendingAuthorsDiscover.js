@@ -37,7 +37,7 @@ const TrendingAuthorsDiscover = ({ navigation, data }: Props): Object => (
           { [CONSTANTS.PARAMS.TRENDING_AUTHORS]: data },
         );
       }}
-      sectionTitle="Trending Authors"
+      sectionTitle="Trending Singers"
       buttonText="SEE ALL"
       buttonSize="small"
     />

@@ -5,7 +5,7 @@ import { Animated, View } from 'react-native';
 import styled from 'styled-components';
 import LinearGradient from 'react-native-linear-gradient';
 import { StackActions } from 'react-navigation';
-
+import _startCase from 'lodash/startCase';
 import ProgressiveImage from '~/components/common/ProgressiveImage';
 import ErrorMessage from '~/components/common/ErrorMessage';
 import Loading from '~/components/common/Loading';
@@ -155,7 +155,7 @@ class AuthorDetailComponent extends PureComponent<Props, {}> {
       >
         <SectionWrapper>
           <AuthorName
-            name={author.name}
+            name={_startCase(author.name)}
           />
         </SectionWrapper>
         <SectionWrapper>

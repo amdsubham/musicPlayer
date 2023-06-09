@@ -6,7 +6,7 @@ import {
 } from 'react-native';
 import FastImage from 'react-native-fast-image';
 import styled from 'styled-components';
-
+import _startCase from 'lodash/startCase';
 import DefaultButton from '~/components/common/DefaultButton';
 
 const Wrapper = styled(View)`
@@ -115,10 +115,10 @@ const TrendingAuthorsListItem = ({
       uri={author.profileImageURL}
     />
     <TextContent>
-      <AuthorName>{author.name}</AuthorName>
+      <AuthorName>{_startCase(author.name)}</AuthorName>
       <NumberOfPodcasts>
         {`${author.podcasts.length} ${
-          author.podcasts.length === 1 ? 'Podcast' : 'Podcasts'
+          author.podcasts.length === 1 ? 'Song' : 'Songs'
         }`}
       </NumberOfPodcasts>
     </TextContent>

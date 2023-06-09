@@ -38,7 +38,7 @@ const RootStack = createStackNavigator(
 
     [LOCAL_STACK_ROUTES.SEARCH_AUTHORS_RESULT]: {
       screen: SearchAuthorListContainer,
-      navigationOptions: ({ navigation, screenProps }) => getDefaultHeaderWithTitle('Search Authors', navigation, screenProps),
+      navigationOptions: ({ navigation, screenProps }) => getDefaultHeaderWithTitle('Search Singers', navigation, screenProps),
     },
 
     [CONSTANTS.ROUTES.SUBJECT_DETAIL]: {
@@ -67,7 +67,7 @@ const RootStack = createStackNavigator(
 
     [CONSTANTS.ROUTES.PODCAST_DETAIL]: {
       screen: PodcastDetailContainer,
-      navigationOptions: ({ navigation, screenProps }) => getDefaultHeaderWithTitle('Podcast Detail', navigation, screenProps),
+      navigationOptions: ({ navigation, screenProps }) => getDefaultHeaderWithTitle('Song Detail', navigation, screenProps),
     },
 
     [CONSTANTS.ROUTES.PLAYER]: {

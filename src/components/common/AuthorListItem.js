@@ -6,7 +6,7 @@ import {
 } from 'react-native';
 import FastImage from 'react-native-fast-image';
 import styled from 'styled-components';
-
+import _startCase from 'lodash/startCase';
 import SectionTitle from '~/components/common/SectionTitle';
 import DefaultButton from '~/components/common/DefaultButton';
 import Icon from '~/components/common/Icon';
@@ -93,7 +93,7 @@ const AuthorListItem = ({
     <RightContent
       withIndex={withIndex}
     >
-      <AuthorName>{author.name}</AuthorName>
+      <AuthorName>{_startCase(author.name)}</AuthorName>
       <DetailButton
         onPress={onPressItem}
       >

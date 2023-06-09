@@ -16,37 +16,37 @@ export const TYPES = {
 
 const configs = {
   [TYPES.REMOVE_DOWNLOADED_PODCAST_BY_PLAYLIST]: {
-    title: 'Remove Downloaded Podcast',
+    title: 'Remove Downloaded Song',
     description:
-      "This Podcast belongs to some of your Playlists that are available offline. If you remove the download of this podcast, it won't be available offline anymore on these playlists.",
+      "This Song belongs to some of your Playlists that are available offline. If you remove the download of this podcast, it won't be available offline anymore on these playlists.",
     positiveText: 'Ok',
   },
 
   [TYPES.REMOVE_DOWNLOADED_PODCAST]: {
-    title: 'Remove Downloaded Podcast',
+    title: 'Remove Downloaded Song',
     description:
-      'Are you sure to remove this Podcast permanently from your device?',
+      'Are you sure to remove this Song permanently from your device?',
     positiveText: 'Yes',
   },
 
   [TYPES.DOWNLOAD_PODCAST]: {
-    title: 'Download Podcast',
+    title: 'Download Song',
     description:
       'Are you sure you want to Download this podcast? It can take a while.',
     positiveText: 'Yes',
   },
 
   [TYPES.REMOVE_PODCAST_FROM_PLAYLIST]: {
-    title: 'Remove Podcast',
+    title: 'Remove Song',
     description:
-      'Are you sure you want to remove this Podcast from this Playlist?',
+      'Are you sure you want to remove this Song from this Playlist?',
     positiveText: 'Yes',
   },
 
   [TYPES.ADD_REPEATED_PODCAS_PLAYLIST]: {
-    title: 'Duplicated Podcast',
+    title: 'Duplicated Song',
     description:
-      'This Podcast has already been added to this Playlist. Do you want add it again?',
+      'This Song has already been added to this Playlist. Do you want add it again?',
     positiveText: 'Yes',
   },
 

@@ -33,7 +33,6 @@ class ThemeContextProvider extends Component<Props, State> {
       CONSTANTS.KEYS.FIRST_TIME_RUNNING_APP,
       false,
     );
-
     if (typeof isFirstTimeRunningApp === 'boolean') {
       this.setState({
         isDarkThemeActivated: true,
@@ -64,7 +63,6 @@ class ThemeContextProvider extends Component<Props, State> {
     await persistItemInStorage(CONSTANTS.KEYS.APP_THEME, !isDarkThemeActivated);
     await persistItemInStorage(CONSTANTS.KEYS.FIRST_TIME_RUNNING_APP, true);
   };
-
   getAppTheme = (): Object => {
     const { isDarkThemeActivated } = this.state;
 

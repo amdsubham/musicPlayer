@@ -106,7 +106,7 @@ const PlaylistListItem = ({
           <BottomContentWrapper>
             <NumberPodcasts>
               {`${numberOfPodcasts} ${
-                numberOfPodcasts === 1 ? 'Podcast' : 'Podcasts'
+                numberOfPodcasts === 1 ? 'Song' : 'Songs'
               }`}
             </NumberPodcasts>
             <Icon

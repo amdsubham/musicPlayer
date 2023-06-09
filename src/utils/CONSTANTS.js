@@ -7,6 +7,7 @@ const ROUTES = {
   PODCAST_DETAIL: 'PODCAST_DETAIL',
   AUTHOR_DETAIL: 'AUTHOR_DETAIL',
   INTERESTS: 'INTERESTS',
+  BLOCKER: 'BLOCKER',
   PLAYER: 'PLAYER',
   HOME: 'HOME',
   SEARCH: 'SEARCH',
@@ -54,3 +55,5 @@ export default {
   PARAMS,
   KEYS,
 };
+
+export const SERVER_URL = 'http://31.220.21.195:3002/mind-cast/api/v1';

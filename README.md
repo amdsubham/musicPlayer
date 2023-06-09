@@ -1,6 +1,3 @@
-
-
-
 # MindCast
 
 ![Preview-Screens](https://github.com/steniowagner/mindCast/blob/master/PUXA-R10!.png)
@@ -53,54 +50,33 @@ iOS .ipa installer: Soon!
 
 - Listen and download a single podcasts to listen offline (no need to create a playlist)
 
-- Playlists
-	- Create, Edit and Remove your Playlists
-	- Download Playlists to listen when the user goes offline
-	- Undownload Playlists
+- Playlists - Create, Edit and Remove your Playlists - Download Playlists to listen when the user goes offline - Undownload Playlists
 
-- Player to listen the selected podcasts and also be able to: 
-	- Shuffle Playlist
-	- Repeat Playist
-	- Repeat a single Podcast
-	- Download the current podcast
-	- Add the current Podcast to a Playlist
-	- Access the queue of next podcasts that will be played
-	- Remove podcasts from the queue
-	- Play/Pause the current Podcast
-	- Next/Previous podcast on the Playlist
+- Player to listen the selected podcasts and also be able to: - Shuffle Playlist - Repeat Playist - Repeat a single Podcast - Download the current podcast - Add the current Podcast to a Playlist - Access the queue of next podcasts that will be played - Remove podcasts from the queue - Play/Pause the current Podcast - Next/Previous podcast on the Playlist
 
-- Bottom Player
-	- Access the bottom player out of the Player screen in order to keep tracking the current podcast
-	- Get the Author and the Title of the current podcast
-	- Play/Pause/Forward the current podcast
-	- Track the timer of the current podcast
+- Bottom Player - Access the bottom player out of the Player screen in order to keep tracking the current podcast - Get the Author and the Title of the current podcast - Play/Pause/Forward the current podcast - Track the timer of the current podcast
 
-- Discover
-	- A Dashboard with:
-	  - Trending Authors
-	  - Hottest Podcasts
-	  - New Podcasts Released
+- Discover - A Dashboard with: - Trending Authors - Hottest Podcasts - New Podcasts Released
 
 - Search
 
-	- Search for Authors by name
+      	- Search for Authors by name
 
-	- Get information about a certain category, showing it's featured and trending podcats, and the authors that talk about this category
+      	- Get information about a certain category, showing it's featured and trending podcats, and the authors that talk about this category
 
-- Library
-	- Create Playlists, add podcasts and download it to listen offline
+- Library - Create Playlists, add podcasts and download it to listen offline
 
-	- Access Your Podcasts (Downloaded + Podcasts saved on your Playlists) in the form of playlist
+      	- Access Your Podcasts (Downloaded + Podcasts saved on your Playlists) in the form of playlist
 
-	- Access your Podcasts downloaded in the form of playlist
-	
-	- Access recently played podcasts in the form of playlist
+      	- Access your Podcasts downloaded in the form of playlist
 
-	- Change your interests
+      	- Access recently played podcasts in the form of playlist
+
+      	- Change your interests
 
 - Settings
 
-	- Choose between the Dark and Light theme
+      	- Choose between the Dark and Light theme
 
 ## Getting Started
 
@@ -136,15 +112,15 @@ $ npm install
 
 1 - Follow the instructions on the [mindcast-server](https://github.com/steniowagner/mindcast-server) to have the server up and running on your machine.
 
-2 - With the server up and running, go to the [/.env.development](https://github.com/steniowagner/mindCast/blob/master/.env.development) file and edit the SERVER_URL value for the IP of your machine (you can have some issues with _localhost_ if you're running on an android physical device, but you can use localhost safely on iOS).
+2 - With the server up and running, go to the [/.env.development](https://github.com/steniowagner/mindCast/blob/master/.env.development) file and edit the SERVER*URL value for the IP of your machine (you can have some issues with \_localhost* if you're running on an android physical device, but you can use localhost safely on iOS).
 
 It should looks like this:
 
-SERVER_URL=http://**_IP_OF_YOUR_MACHINE_**:3001/mind-cast/api/v1
+SERVER*URL=http://**_IP_OF_YOUR_MACHINE*\*\*:3002/mind-cast/api/v1
 
-*or*
+_or_
 
-SERVER_URL=http://localhost:3001/mind-cast/api/v1
+SERVER_URL=http://localhost:3002/mind-cast/api/v1
 
 ### Running
 
@@ -184,7 +160,6 @@ $ react-native run-ios
 - [React-Native-Swipeout](https://github.com/dancormier/react-native-swipeout) - Swipe for edit/remove playlists and remove podcasts inside some playlist
 - [React-Native-Video](https://github.com/react-native-community/react-native-video) - Consume the audio files via streaming
 - [React-Native-FS](https://github.com/itinance/react-native-fs) - Handle download/undownload podcasts on file-system
-
 
 ## Support tools
 
